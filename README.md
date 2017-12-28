@@ -1,5 +1,5 @@
 # docker-presto
-Facebook Presto docker image for development and testing purposes. Forked from [docker-presto] (https://github.com/zhicwu/docker-presto.git)
+Facebook Presto docker image for development and testing purposes. Forked from [docker-presto](https://github.com/zhicwu/docker-presto.git)
 
 ## What's inside
 ```
@@ -12,6 +12,7 @@ ubuntu:14.04
 * Official Ubuntu Trusty(14.04) docker image
 * Oracle JDK 8u144
 * [Facebook Presto](http://prestodb.io/) latest release (0.191)
+* Presto Admin
 
 ## How to use
 - Setup scripts
