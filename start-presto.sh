@@ -120,7 +120,7 @@ start_presto() {
   # references: http://stackoverflow.com/questions/24288616/permission-denied-on-accessing-host-directory-in-docker
   docker run -d --name="$PRESTO_ALIAS" --restart=always -h presto -p $SERV_PORT:8080 \
     -v $CONF_DIR:/presto/etc:Z -v $DATA_DIR:/presto/data:Z \
-    zhicwu/presto:$PRESTO_TAG
+    presto:$PRESTO_TAG
 
   info "Try 'docker logs -f \"$PRESTO_ALIAS\"' to see if this works"
 }

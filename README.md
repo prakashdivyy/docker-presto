@@ -1,5 +1,5 @@
 # docker-presto
-Facebook Presto docker image for development and testing purposes.
+Facebook Presto docker image for development and testing purposes. Forked from [docker-presto] (https://github.com/zhicwu/docker-presto.git)
 
 ## What's inside
 ```
@@ -7,22 +7,22 @@ ubuntu:14.04
  |
  |--- zhicwu/java:8
        |
-       |--- zhicwu/presto:latest
+       |--- presto:latest
 ```
 * Official Ubuntu Trusty(14.04) docker image
-* Oracle JDK 8 latest release
-* [Facebook Presto](http://prestodb.io/) latest release
+* Oracle JDK 8u144
+* [Facebook Presto](http://prestodb.io/) latest release (0.191)
 
 ## How to use
-- Pull the image
-```
-# docker pull zhicwu/presto:latest
-```
 - Setup scripts
 ```
-# git clone https://github.com/zhicwu/docker-presto.git
+# git clone https://github.com/prakashdivyy/docker-presto.git
 # cd docker-presto
 # chmod +x *.sh
+```
+- Build the image
+```
+# docker build -t presto .
 ```
 - Start Presto
 ```
